@@ -9,12 +9,12 @@
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
 </head>
 <body>
-    <main class="#">
-        <div class="imagem">
+    <main>
+        <header class="imagem">
             <img src="img/avatar.jpg" alt="Perfil">
-        </div>
+        </header>
         <div class="name">Gustavo Feriani</div>
-            <div class="redes-sociais">
+            <section class="redes-sociais">
                 <div class="icon">
                     <a href="#" target="_blank"><i class="ph ph-github-logo"></i></a>
                     <span><a href="#">GitHub</a></span>
@@ -31,21 +31,20 @@
                     <a href="" target="_blank"><i class="ph ph-twitch-logo"></i></a>
                     <span><a href="#">Twitch</a></span>
                 </div>
-                <div class="email">
+                <div id="email">
                     <a href="mailto:gustavo.feriani@sp.senai.br">
                     <i class="ph-bold ph-envelope-simple"></i></a>
                 </div>
-            </div> <!-- Fim das Redes Sociais  -->
+            </section> <!-- Fim das Redes Sociais  -->
         
 
-        <h2 class="titulo"> Sobre Mim </h2>
         <div class="texto">
+            <h2 id="sobre-mim"> Sobre Mim </h2>
             
             <p>Sou acadêmico em Sistemas para Internet, e estou extremamente interessado em fazer parte de uma equipe de desenvolvimento como estagiária ou dev Júnior. Estou migrando pra área de TI a um pouco mais de 1 ano e busco ser uma desenvolvedora full stack, venho trabalhando as minha habilidades em programação com projetos pessoais e concluindo alguns cursos de tecnologia.</p>
-
         </div> <!-- Fim Sobre Mim -->
 
-            <h2 class="titulo"> Conhecimento Front-End </h2>
+            <h2 class="subtitulo"> Conhecimento Front-End </h2>
         
         <div class="linguagem"> <!-- Linguagens de Programação -->
             <div class="Front">
@@ -57,18 +56,22 @@
             </div>
         </div>
 
-<h2 class="titulo"> Conheça meus Projetos de DevFront-End </h2>
-    <div class="Projetos">
+<h2 class="subtitulo"> Conheça os meus Eventos </h2>
+    <section class="Projetos">
     
-        <div class="item" id="AlbumFotos">Album de Fotos</div>
-            <iframe id="video" width="640" height="360" src="https://www.youtube.com/embed/2zFe_T2323c" title="Critérios de desempate do app Geração SESI SENAI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <div class="item" id="album">Album de Fotos</div>
+            <iframe class="video" id="videoAlbum"
+            width="500" height="250" src="https://www.youtube.com/embed/YR-XFXkJpJ4" title="wedding photobook" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
     
-        <div class="item" id="Casamentos">Casamentos</div>
-            <iframe id="video" width="640" height="360" src="https://www.youtube.com/embed/2zFe_T2323c" title="Critérios de desempate do app Geração SESI SENAI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <div class="item" id="casamentos">Casamentos</div>
+            <iframe class="video"  id="videoCasamentos"
+            width="500" height="250" src="https://www.youtube.com/embed/xHeh4zyqVU0" title="CASAMENTO DANI e GUI - VÍDEO OFICIAL / foi muito emocionante, um sonho ❤️" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
     
-        <div class="item" id="Buffet">Buffet</div>
-            <iframe id="video" width="640" height="360" src="https://www.youtube.com/embed/2zFe_T2323c" title="Critérios de desempate do app Geração SESI SENAI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-    </div>
+        <div class="item" id="buffet">Buffet</div>
+            <iframe class="video" id="videoBuffet"
+            width="500" height="250" src="https://www.youtube.com/embed/gg5Di7wjTJ8" title="Buffet Gourmet do Unique Palace em Formatura" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>    
+
+    </section>
     
     <footer class="rodape">
         <p class="ult-paragrafo">&copy; 2023 - Gustavo Feriani </p>

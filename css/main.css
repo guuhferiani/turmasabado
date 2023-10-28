@@ -4,7 +4,6 @@
     margin: 0;  /* Margem */
     padding: 0;  /* Preenchimento */
 } 
-
 /* Corpo do Site */ 
 body{
     height: 100%; /* altura */
@@ -44,7 +43,7 @@ body{
     justify-content:center;
     align-items:center; /* alinhamento de itens  */
 }
-.icon, .email {
+.icon, #email {
     display: inline-block;
     height: 35px;
     width: 35px;
@@ -55,7 +54,7 @@ body{
     margin: 3px;
     overflow: hidden;
 }
-.icon i, .email i{
+.icon i, #email i{
     display: inline-block;
     width: 35px;
     height: 35px;
@@ -75,7 +74,8 @@ body{
     font-weight: 100;
     color:#308ff4 ; /* Cor do Icone */
     line-height: 35px;
-    font-size: 17px;
+    font-size: 15px;
+    text-decoration: none;
 }
 .name-icon{
     font-family: Arial, Helvetica, sans-serif;
@@ -111,6 +111,7 @@ body{
 
 /* Css TEXTO */ 
 .texto{
+    position: relative;
     display: flex;
     justify-content: center;  /* centralizar Texto */
     align-items: center;
@@ -130,17 +131,15 @@ body{
     box-shadow: 0 3px 3px rgba(0, 0, 0, 0.5);  /* RGB-A = Alpha para  transparencia*/
     /* cursor: pointer;  */ 
 }
-.titulo{
+#sobre-mim{
+    position: absolute;
+    top: 10px;
     display: flex;
-    justify-content: center;  /* centralizar Texto */
-    align-items: center;
-    margin: auto;
-    margin-top: 20px;
-    display: flex;
-    color: #308ff4;
-    font-family:Arial, Helvetica, sans-serif;
+    color: aliceblue;
     font-size: 25px;
-    text-align: justify;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    line-height: 35px;
 }
 .linguagem{
     display: flex;
@@ -165,6 +164,15 @@ body{
     text-decoration: none; /* é usada para definir a formatação de underline */ 
     color: #308ff4;
 }
+.subtitulo{
+    display: flex;
+    justify-content: center;
+    color: #308ff4;
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-top: 60px;
+   
+}
 .item{
     margin: auto;
     display: flex;  /* nulo */
@@ -178,17 +186,21 @@ body{
     width: 700px;
     height: 45px;
     margin-bottom: 7px;
-    background: #ccc;
+    background: #eeeeee;
     box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
     cursor: pointer;
 }
-
-#video{
+.item:hover{
+    background: rgb(210, 210, 210);
+    transition: 0.5s;
+}
+.video{
     padding: 10px;
     margin: auto;
     display: none;
+ 
 }
-#video.active{
+.video.active{
     display: block;
 }
 .rodape{
@@ -200,3 +212,93 @@ body{
     padding: 50px;
     font-family: 'Times New Roman', Times, serif;
 }
+
+/* Fim das configurações para DESKTOP */
+
+
+/* Dispositivos Mobiles */
+@media (max-width: 700px) {    /*resolucao 700px */ 
+    .imagem img{
+        width: 150px;
+        border-radius: 200px;
+        margin-top: 30px;
+    }  
+    .texto{
+        width: 350px;
+        height: 250px;
+    }
+    .linguagem img{
+        width: 165px;    
+    }
+    .item{
+        width: 350px;
+        
+    }
+    .video{
+        width: 330px;
+    }
+    .subtitulo{
+        font-size: 20px;
+    }
+}  /* Fim resolucao 700px */
+
+@media (max-width: 500px) { /*resolucao 500px */ 
+    .imagem img {
+        width: 120px;
+        margin-top: 30px;
+    }
+    .nome {
+        font-size: 26px;
+    }
+    .texto{
+        padding: 15px;
+        width: 244px;
+        height: 270px;
+        margin-top: 30px;
+        font-size: 14px;
+    }
+    .subtitulo{
+        font-size: 15px;
+        margin-top: 22px;
+    }
+    p{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .video{
+        width: 270px;
+        height: 160px;
+    }
+    .item{
+        width: 265px;
+        height: 40px;
+    }
+    .linguagem img {
+        margin-top: 15px;
+        width: 120px;
+    }
+    .icon, #email {
+        width: 25px;
+        height: 25px;
+        border-radius: 30px;
+    }
+    .icon i, #email i{
+        width: 25px;
+        height: 25px;
+        line-height: 25px;
+        text-align: center;
+        font-size: 15px;
+        border-radius: 30px;
+    }
+    .icon span a{
+        margin-right: 43px;
+        line-height: 20px;
+        font-size: 12px;
+    }
+    .rodape{
+        font-size: 20px;
+        margin-top: 30px;
+        padding: 20px;
+    }
+} /* fim resolucao 500px */
